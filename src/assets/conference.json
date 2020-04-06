@@ -1,0 +1,915 @@
+{
+  "status": "success",
+  "code": 100,
+  "conference": {
+    "id": 1,
+    "name": "RatSif 2019",
+    "description": "of the International Conference",
+    "email": "info@tsi.lv",
+    "organizer": "Transport and Telecommunication Institute",
+    "link": "http://ratsif2018s.tsi.lv/",
+    "country": "Riga, Latvia",
+    "address": "Lomonosova 1, 9-floor building",
+    "active": true,
+    "start": 1561545000000,
+    "end": 1561645800000,
+    "sessions": [
+      {
+        "name": "Registration and Welcome Coffee",
+        "description": null,
+        "start": 1561545000000,
+        "place": "Hall#1 Aud. 130",
+        "moderators": "",
+        "data": []
+      },
+      {
+        "name": "SESSION 1",
+        "description": null,
+        "start": 1561546800000,
+        "place": "Hall#1 Aud. 130",
+        "moderators": "",
+        "data": [
+          {
+            "id": 1,
+            "name": "Introduction to the Project «SCI-BI: Digitalization in Logistics and Transport»",
+            "description": "null",
+            "speaker": "Irina Yatskiv",
+            "place": "Hall#1 Aud. 130"
+          },
+          {
+            "id": 2,
+            "name": "Industrie 4.0 in Logistics and New Business Models",
+            "description": null,
+            "speaker": "Kay Matzner",
+            "place": "Hall#1 Aud. 130"
+          },
+          {
+            "id": 3,
+            "name": "Smart Logistics Zones as Enabler of Logistics 4.0 — Efficient Handling Processes at the Airport",
+            "description": null,
+            "speaker": "Klaus Richter",
+            "place": "Hall#1 Aud. 130"
+          },
+          {
+            "id": 4,
+            "name": "Questions and Discussion",
+            "description": null,
+            "speakers": "",
+            "place": "Hall#1 Aud. 130"
+          }
+        ]
+      },
+      {
+        "name": "Coffee break",
+        "description": null,
+        "start": 1561552200000,
+        "place": "Hall#1 Aud. 130",
+        "moderators": "",
+        "data": []
+      },
+      {
+        "name": "SESSION 2",
+        "description": null,
+        "start": 1561554000000,
+        "place": "Hall#1 Aud. 130",
+        "moderators": "",
+        "data": [
+          {
+            "id": 5,
+            "name": "Main Trends in Research Activities in Digitalization for Transport and Logistics",
+            "description": null,
+            "speaker": "Igor Kabashkin",
+            "place": "Hall#1 Aud. 130"
+          },
+          {
+            "id": 6,
+            "name": "Digitalization — Challenges for Business",
+            "description": null,
+            "speaker": "Representatives of Latvian Transport and Logistics Business",
+            "place": "Hall#1 Aud. 130"
+          },
+          {
+            "id": 7,
+            "name": "Questions and Discussion",
+            "description": null,
+            "speakers": "",
+            "place": "Hall#1 Aud. 130"
+          },
+          {
+            "id": 8,
+            "name": "Conclusions",
+            "description": null,
+            "speaker": "Irina Yatskiv",
+            "place": "Hall#1 Aud. 130"
+          }
+        ]
+      },
+      {
+        "name": "Registration",
+        "description": null,
+        "start": 1561624200000,
+        "place": "Hall#1 Aud. 130",
+        "moderators": "",
+        "data": []
+      },
+      {
+        "name": "SESSION #1",
+        "description": "COMPUTER PROBLEMS OF THE INFORMATION SOCIETY  INFORMATĪVĀS SABIEDRĪBAS DATORIZĀCIJAS PROBLĒMAS  КОМПЬЮТЕРНЫЕ ПРОБЛЕМЫ ИНФОРМАЦИОННОГО ОБЩЕСТВА",
+        "start": 1561626000000,
+        "place": "Hall#1 Aud. 130",
+        "moderators": "M. Savrasovs, B. Misnevs",
+        "data": [
+          {
+            "id": 9,
+            "name": "Исследование возможности применения когнитивных облачных сервисов в дистанционном обучении",
+            "description": null,
+            "speaker": "Олеся Бескина",
+            "place": "Hall#1 Aud. 130"
+          },
+          {
+            "id": 11,
+            "name": "Vehicle to grid system integration in Latvia procedures development",
+            "description": null,
+            "speaker": "Romans Fedjajevs",
+            "place": "Hall#1 Aud. 130"
+          },
+          {
+            "id": 12,
+            "name": "Stock keeping units grouping via the combination of principal component analysis and K-means clustering",
+            "description": null,
+            "speaker": "Aleksandrs Avdeikins, Ilya Jackson, Jurijs Tolujevs",
+            "place": "Hall#1 Aud. 130"
+          },
+          {
+            "id": 13,
+            "name": "Исследование методов стеганографии цифровых изображений",
+            "description": null,
+            "speaker": "Андрей Соболев",
+            "place": "Hall#1 Aud. 130"
+          },
+          {
+            "id": 14,
+            "name": "Biznesa procesu automatizēšanas metodoloģijas izstrāde maza un vidēja izmēra uzņēmumiem",
+            "description": null,
+            "speaker": "Ivo Lorencs",
+            "place": "Hall#1 Aud. 130"
+          },
+          {
+            "id": 15,
+            "name": "Проблема использования наивного Байесовского классификатора для категоризации текстов",
+            "description": null,
+            "speaker": "Анастасия Павленко",
+            "place": "Hall#1 Aud. 130"
+          },
+          {
+            "id": 16,
+            "name": "Исследование возможностей использования имитационного моделирования при оценке инвестиционных проектов",
+            "description": null,
+            "speaker": "Олеся Бескина",
+            "place": "Hall#1 Aud. 130"
+          },
+          {
+            "id": 17,
+            "name": "Расчет вероятности успешной передачи сообщений в сети с ненадежными компонентами",
+            "description": null,
+            "speaker": "Алина Аубакирова",
+            "place": "Hall#1 Aud. 130"
+          },
+          {
+            "id": 18,
+            "name": "Development of algorithms for recognition system using principal Component Analysis & Convolution Neural Network",
+            "description": null,
+            "speaker": "Boris Fofanov",
+            "place": "Hall#1 Aud. 130"
+          }
+        ]
+      },
+      {
+        "name": "SESSION #3",
+        "description": "MARKET: RESEARCH, PROJECTS, TECHNOLOGIES AND PROBLEMS OF THE MODERN ECONOMY \r\nTIRGUS: PĒTĪJUMI, PROJEKTI, TEHNOLOĢIJAS UN MŪSDIENU EKONOMIKAS PROBLĒMAS \r\nРЫНОК: ИССЛЕДОВАНИЯ, ПРОЕКТЫ, ТЕХНОЛОГИИ И ПРОБЛЕМЫ СОВРЕМЕННОЙ ЭКОНОМИКИ",
+        "start": 1561626000000,
+        "place": "Hall#2 Aud.230",
+        "moderators": "I. Ishmuhametov, I. Kuzmina-Merlino",
+        "data": [
+          {
+            "id": 19,
+            "name": "Исследование влияния среднего дохода населения на темпы развития экономики Латвии",
+            "description": null,
+            "speaker": "Анжела Андреева",
+            "place": "Hall#2 Aud.230"
+          },
+          {
+            "id": 20,
+            "name": "Разработка бизнес - модели для предприятия общественного питания",
+            "description": null,
+            "speaker": "",
+            "place": "Hall#2 Aud.230"
+          },
+          {
+            "id": 21,
+            "name": "Исследование успешности обучения студентов в частном вузе методами Learning Analytics",
+            "description": null,
+            "speaker": "Оксана Кушнырева",
+            "place": "Hall#2 Aud.230"
+          },
+          {
+            "id": 22,
+            "name": "Разработка мотивационной системы оплаты труда",
+            "description": null,
+            "speaker": "Марианна Яна Вулфсоне",
+            "place": "Hall#2 Aud.230"
+          },
+          {
+            "id": 23,
+            "name": "Исследование управления финансами в условиях современного рынка услуг гостеприимства Латвии компании SIA \"Radisson Blu Daugava\"",
+            "description": null,
+            "speaker": "Алексей Курепин",
+            "place": "Hall#2 Aud.230"
+          },
+          {
+            "id": 24,
+            "name": "The comparison of comprehensive time-series regression models for forecasting Latvia’s GDP and inflation",
+            "description": null,
+            "speaker": "Ildar Farkhshatov",
+            "place": "Hall#2 Aud.230"
+          },
+          {
+            "id": 25,
+            "name": "Роль социальных сетей в достижение успеха современной компании",
+            "description": null,
+            "speaker": "Рихард Флауманис",
+            "place": "Hall#2 Aud.230"
+          },
+          {
+            "id": 26,
+            "name": "The analysis of competitive advantages and ways of development of the Latvian market of light industry",
+            "description": null,
+            "speaker": "Sofija Lukonina",
+            "place": "Hall#2 Aud.230"
+          },
+          {
+            "id": 27,
+            "name": "Разработка методики интеграции инструментов Интернет – маркетинга в систему маркетинга предприятия",
+            "description": null,
+            "speaker": "Татьяна Москвитина",
+            "place": "Hall#2 Aud.230"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "SESSION #2",
+        "description": "TRANSPORT AND LOGISTICS\r\nTRANSPORTS UN LOĢISTIKA\r\nТРАНСПОРТ И ЛОГИСТИКА",
+        "start": 1561636800000,
+        "place": "Hall#1 Aud.130",
+        "moderators": "Igor Kabashkin, A. Medvedevs",
+        "data": [
+          {
+            "id": 32,
+            "name": "Модель поддержки принятия решений при мультимодальных перевозках",
+            "description": null,
+            "speaker": "Анна Павлова",
+            "place": "Hall#1 Aud.130"
+          },
+          {
+            "id": 33,
+            "name": "Исследование цепей поставок с мультимодальными перевозками методом анализа сценариев",
+            "description": null,
+            "speaker": "Николай Дайс",
+            "place": "Hall#1 Aud.130"
+          },
+          {
+            "id": 34,
+            "name": "Пути совершенствования системы закупок при объединении двух производственных предприятий",
+            "description": null,
+            "speaker": "Кирилл Андреев",
+            "place": "Hall#1 Aud.130"
+          },
+          {
+            "id": 35,
+            "name": "Concept development of smart technologies for parking monitoring in city centre",
+            "description": null,
+            "speaker": "Nauris Linķevičs",
+            "place": "Hall#1 Aud.130"
+          },
+          {
+            "id": 28,
+            "name": "Принципы и проблемы внедрения систем управления складом на промышленных предприятиях",
+            "description": null,
+            "speaker": "Артём Лонщаков",
+            "place": "Hall#1 Aud.130"
+          },
+          {
+            "id": 29,
+            "name": "Baltijas jūras reģiona jūras ostu konkurētspējas analīze izmantojot hierarhisko analīzes metodi",
+            "description": null,
+            "speaker": "Āris Gailītis",
+            "place": "Hall#1 Aud.130"
+          },
+          {
+            "id": 30,
+            "name": "Разработка модели принятия решения для выбора альтернативы транспортировки груза",
+            "description": null,
+            "speaker": "Ангелина Трофимова",
+            "place": "Hall#1 Aud.130"
+          },
+          {
+            "id": 31,
+            "name": "Анализ влияния развития порта на городские транспортные потоки",
+            "description": null,
+            "speaker": "Ангелина Трофимова",
+            "place": "Hall#1 Aud.130"
+          }
+        ]
+      },
+      {
+        "name": "SESSION #3",
+        "description": "MARKET: RESEARCH, PROJECTS, TECHNOLOGIES AND PROBLEMS OF THE MODERN ECONOMY \r\nTIRGUS: PĒTĪJUMI, PROJEKTI, TEHNOLOĢIJAS UN MŪSDIENU EKONOMIKAS PROBLĒMAS\r\nРЫНОК: ИССЛЕДОВАНИЯ, ПРОЕКТЫ, ТЕХНОЛОГИИ И ПРОБЛЕМЫ СОВРЕМЕННОЙ ЭКОНОМИКИ",
+        "start": 1561636800000,
+        "place": "Hall#2 Aud.230",
+        "moderators": "",
+        "data": [
+          {
+            "id": 36,
+            "name": "Использование PR-технологий для создания имиджа мобильными операторами на рынке телекоммуникаций в Казахстане",
+            "description": null,
+            "speaker": "Анастасия Тугельбаева",
+            "place": "Hall#2 Aud.230"
+          },
+          {
+            "id": 37,
+            "name": "Исследование факторов мотивации труда персонала транспортной компании",
+            "description": null,
+            "speaker": "Вадим Олейников",
+            "place": "Hall#2 Aud.230"
+          },
+          {
+            "id": 38,
+            "name": "Совершенствование учёта и анализа затрат на транспортном предприятии",
+            "description": null,
+            "speaker": "Николай Ракицкий",
+            "place": "Hall#2 Aud.230"
+          },
+          {
+            "id": 39,
+            "name": "Intellectual capital as the main resource of the modern enterprise",
+            "description": null,
+            "speaker": "Oksana Skorobogatova, Pāvels Podjačevs",
+            "place": "Hall#2 Aud.230"
+          },
+          {
+            "id": 40,
+            "name": "Development of a Marketing Strategy of a Company",
+            "description": null,
+            "speaker": "Nuriddin Egamberdiev",
+            "place": "Hall#2 Aud.230"
+          },
+          {
+            "id": 41,
+            "name": "Компетенция сотрудников как конкурентное преимущество современных небанковских кредитных организаций",
+            "description": null,
+            "speaker": "Илона Юревич",
+            "place": "Hall#2 Aud.230"
+          },
+          {
+            "id": 42,
+            "name": "Методы повышения эффективности управления запасами на предприятии молочной промышленности",
+            "description": null,
+            "speaker": "Валентина Корикова",
+            "place": "Hall#2 Aud.230"
+          },
+          {
+            "id": 43,
+            "name": "Разработка методики выбора многоуровневой маркетинговой стратегии на предприятии",
+            "description": null,
+            "speaker": "Катерина Лапцова",
+            "place": "Hall#2 Aud.230"
+          },
+          {
+            "id": 44,
+            "name": "Разработка стратегии обновления самолетного парка авиакомпании",
+            "description": null,
+            "speaker": "Никита Минаков",
+            "place": "Hall#2 Aud.230"
+          },
+          {
+            "id": 45,
+            "name": "Применение проектного подхода для решения проблемы профицита сырья на промышленном предприятии",
+            "description": null,
+            "speaker": "Кирилл Кориков",
+            "place": "Hall#2 Aud.230"
+          },
+          {
+            "id": 46,
+            "name": "Разработка схемы объявлений о вакансиях для частных предриятий Балтии",
+            "description": null,
+            "speaker": "Марк Броженко",
+            "place": "Hall#2 Aud.230"
+          }
+        ]
+      }
+    ],
+    "speakers": [
+      {
+        "id": 30,
+        "name": "A.",
+        "surname": "Medvedevs",
+        "email": null,
+        "about": null,
+        "country": "Latvia",
+        "organization": null,
+        "degree": "Prof., Dr.sc.ing."
+      },
+      {
+        "id": 11,
+        "name": "Aleksandrs",
+        "surname": "Avdeikins",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 32,
+        "name": "Āris",
+        "surname": "Gailītis",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 7,
+        "name": "B.",
+        "surname": "Misnevs",
+        "email": null,
+        "about": null,
+        "country": "Latvia",
+        "organization": null,
+        "degree": "Prof., Dr.sc.ing."
+      },
+      {
+        "id": 18,
+        "name": "Boris",
+        "surname": "Fofanov",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 19,
+        "name": "I.",
+        "surname": "Ishmuhametov",
+        "email": null,
+        "about": null,
+        "country": "Latvia",
+        "organization": null,
+        "degree": "Ass. Prof., Dr. psych. I."
+      },
+      {
+        "id": 20,
+        "name": "I.",
+        "surname": "Kuzmina-Merlino",
+        "email": null,
+        "about": null,
+        "country": "Latvia",
+        "organization": null,
+        "degree": "Prof., Dr.oec."
+      },
+      {
+        "id": 4,
+        "name": "Igor",
+        "surname": "Kabashkin",
+        "email": null,
+        "about": null,
+        "country": "Latvia",
+        "organization": "TSI",
+        "degree": "Prof., Dr. habil.sc.ing."
+      },
+      {
+        "id": 26,
+        "name": "Ildar",
+        "surname": "Farkhshatov",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 10,
+        "name": "Ilya",
+        "surname": "Jackson",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 1,
+        "name": "Irina",
+        "surname": "Yatskiv",
+        "email": null,
+        "about": "Vice-Rector for Research and Development",
+        "country": null,
+        "organization": "TSI",
+        "degree": "Prof., Dr.sc.ing."
+      },
+      {
+        "id": 14,
+        "name": "Ivo",
+        "surname": "Lorencs",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 12,
+        "name": "Jurijs",
+        "surname": "Tolujevs",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 2,
+        "name": "Kay",
+        "surname": "Matzner",
+        "email": null,
+        "about": "Fraunhofer Institute for Factory Operation and Automation IFF",
+        "country": "Germany",
+        "organization": null,
+        "degree": "Dipl. Vw."
+      },
+      {
+        "id": 3,
+        "name": "Klaus",
+        "surname": "Richter",
+        "email": null,
+        "about": "Fraunhofer Institute for Factory Operation and Automation IFF",
+        "country": "Germany",
+        "organization": null,
+        "degree": "Hon. Prof., Dr. ing."
+      },
+      {
+        "id": 6,
+        "name": "M.",
+        "surname": "Savrasovs",
+        "email": null,
+        "about": null,
+        "country": "Latvia",
+        "organization": null,
+        "degree": "As. Prof., Dr.sc.ing."
+      },
+      {
+        "id": 38,
+        "name": "Nauris",
+        "surname": "Linķevičs",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 46,
+        "name": "Nuriddin",
+        "surname": "Egamberdiev",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 44,
+        "name": "Oksana",
+        "surname": "Skorobogatova",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 45,
+        "name": "Pāvels",
+        "surname": "Podjačevs",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 5,
+        "name": "Representatives of Latvian",
+        "surname": "Transport and Logistics Business",
+        "email": null,
+        "about": null,
+        "country": "Latvia",
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 9,
+        "name": "Romans",
+        "surname": "Fedjajevs",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 28,
+        "name": "Sofija",
+        "surname": "Lukonina",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 25,
+        "name": "Алексей",
+        "surname": "Курепин",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 17,
+        "name": "Алина",
+        "surname": "Аубакирова",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 15,
+        "name": "Анастасия",
+        "surname": "Павленко",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 41,
+        "name": "Анастасия",
+        "surname": "Тугельбаева",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 33,
+        "name": "Ангелина",
+        "surname": "Трофимова",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 13,
+        "name": "Андрей",
+        "surname": "Соболев",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 21,
+        "name": "Анжела",
+        "surname": "Андреева",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 35,
+        "name": "Анна",
+        "surname": "Павлова",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 31,
+        "name": "Артём",
+        "surname": "Лонщаков",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 42,
+        "name": "Вадим",
+        "surname": "Олейников",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 48,
+        "name": "Валентина",
+        "surname": "Корикова",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 34,
+        "name": "Дарина",
+        "surname": "Лукьянчикова",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 22,
+        "name": "Доминика",
+        "surname": "Бабенко",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 16,
+        "name": "Евгений",
+        "surname": "Шульгин",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 47,
+        "name": "Илона",
+        "surname": "Юревич",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 49,
+        "name": "Катерина",
+        "surname": "Лапцова",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 37,
+        "name": "Кирилл",
+        "surname": "Андреев",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 51,
+        "name": "Кирилл",
+        "surname": "Кориков",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 24,
+        "name": "Марианна Яна",
+        "surname": "Вулфсоне",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 52,
+        "name": "Марк",
+        "surname": "Броженко",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 50,
+        "name": "Никита",
+        "surname": "Минаков",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 36,
+        "name": "Николай",
+        "surname": "Дайс",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 43,
+        "name": "Николай",
+        "surname": "Ракицкий",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 23,
+        "name": "Оксана",
+        "surname": "Кушнырева",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 8,
+        "name": "Олеся",
+        "surname": "Бескина",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 27,
+        "name": "Рихард",
+        "surname": "Флауманис",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      },
+      {
+        "id": 29,
+        "name": "Татьяна",
+        "surname": "Москвитина",
+        "email": null,
+        "about": null,
+        "country": null,
+        "organization": null,
+        "degree": null
+      }
+    ]
+  }
+}

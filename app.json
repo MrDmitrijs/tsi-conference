@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "tsi-conference-app",
+    "privacy": "public",
+    "sdkVersion": "35.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ]
+  },
+  "name": "tsi-conference-app",
+  "displayName": "tsi-conference-app"
+}
