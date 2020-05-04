@@ -19,7 +19,7 @@ class Header extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            conference: {},
+            conferenceInfo: {},
         };
     }
 
@@ -31,7 +31,7 @@ class Header extends Component {
     componentWillReceiveProps(nextProps) {
         if (nextProps.completed) {
             this.setState({
-                conference: nextProps.conference,
+                conferenceInfo: nextProps.conferenceInfo,
                 error: nextProps.error,
                 completed: nextProps.completed
             });
@@ -41,7 +41,7 @@ class Header extends Component {
     render() {
         return (
             <View style={{flex:1, alignItems: "center", backgroundColor: "#2c4573"}}>
-                <Text style={{color: config.SECONDARY_BG_COLOR, fontSize: 18, fontWeight: "700"}}>{this.state.conference.name}</Text>
+                <Text style={{color: config.SECONDARY_BG_COLOR, fontSize: 18, fontWeight: "700"}}>{this.state.conferenceInfo.name}</Text>
             </View>
         );
     }

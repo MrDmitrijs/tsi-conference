@@ -11,7 +11,7 @@ class AboutView extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      conference: {},
+      conferenceInfo: {},
     };
   }
 
@@ -23,7 +23,7 @@ class AboutView extends Component {
   componentWillReceiveProps(nextProps) {
     if (nextProps.completed) {
       this.setState({
-        conference: nextProps.conference,
+        conferenceInfo: nextProps.conferenceInfo,
         error: nextProps.error,
         completed: nextProps.completed
       });
@@ -34,28 +34,28 @@ class AboutView extends Component {
     return (
       <ScrollView>
         <View style={styles.container}>
-          <Text style={styles.title}>{this.props.conference.name}</Text>
+          <Text style={styles.title}>{this.props.conferenceInfo.name}</Text>
           <View style={styles.info}>
             <Icon.Button name="calendar" backgroundColor="transparent" color={config.PRIMARY_BG_COLOR}>
-              <Text>{new Date(this.props.conference.start).toLocaleDateString() + '-' + new Date(this.props.conference.end).toLocaleDateString()}</Text>
+              <Text>{new Date(this.props.conferenceInfo.start).toLocaleDateString() + '-' + new Date(this.props.conferenceInfo.end).toLocaleDateString()}</Text>
             </Icon.Button>
           </View>
           <View style={styles.info}>
             <Icon.Button name="map-pin" backgroundColor="transparent" color={config.PRIMARY_BG_COLOR}>
-              <Text>{this.props.conference.country + ', ' + this.props.conference.address}</Text>
+              <Text>{this.props.conferenceInfo.country + ', ' + this.props.conferenceInfo.address}</Text>
             </Icon.Button>
           </View>
           <View style={styles.info}>
             <Icon.Button name="inbox" backgroundColor="transparent" color={config.PRIMARY_BG_COLOR}>
-              <Text>{this.props.conference.email}</Text>
+              <Text>{this.props.conferenceInfo.email}</Text>
             </Icon.Button>
           </View>
           <View style={styles.info}>
             <Icon.Button name="link" backgroundColor="transparent" color={config.PRIMARY_BG_COLOR}>
-              <Text>{this.props.conference.link}</Text>
+              <Text>{this.props.conferenceInfo.link}</Text>
             </Icon.Button>
           </View>
-          <Text style={styles.description}>{this.props.conference.description}</Text>
+          <Text style={styles.description}>{this.props.conferenceInfo.description}</Text>
         </View>
       </ScrollView>
     );

@@ -2,7 +2,7 @@ import * as types from './types';
 
 const init = {
   loading: false,
-  conference: {},
+  conferenceInfo: {},
   error: false,
   completed: false,
   detail: undefined
@@ -15,7 +15,7 @@ const reducer = (state = init, action) => {
         ...state,
         loading: true,
         error: false,
-        conference: {},
+        conferenceInfo: {},
         completed: false,
         detail: undefined
       };
@@ -24,7 +24,7 @@ const reducer = (state = init, action) => {
         ...state,
         loading: false,
         error: false,
-        conference: action.payload.conference,
+        conferenceInfo: action.payload.conferenceInfo,
         completed: true,
         detail: undefined
       };
@@ -32,7 +32,7 @@ const reducer = (state = init, action) => {
       return {
         ...state,
         loading: false,
-        conference: {},
+        conferenceInfo: {},
         error: true,
         completed: true,
         detail: action.error

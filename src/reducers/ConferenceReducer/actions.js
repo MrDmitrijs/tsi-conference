@@ -1,5 +1,5 @@
 import * as types from './types';
-import info from "../../assets/conference";
+import service from "../../services/conference";
 
 export function conference() {
   return { type: types.INFO };
@@ -15,6 +15,13 @@ export function conferenceFail(error) {
 
 export function getInfo() {
   return dispatch => {
-    return dispatch(conferenceOk(JSON.parse(JSON.stringify(info))));
+    const response = service.getInfo();
+    response.then(response => response.json())
+        .then(responseJson => {
+          return dispatch(conferenceOk(responseJson));
+        })
+        .catch(error => {
+          return conferenceFail(error)
+        })
   };
 }

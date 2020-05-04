@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { View, Text } from 'react-native';
 import Icon from 'react-native-vector-icons/Entypo';
 import { ListItem, Card } from 'react-native-elements';
@@ -12,7 +11,7 @@ class SpeakersView extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      conference: {speakers:[]},
+      speakers: [],
       speaker: {},
       modal: false
     };
@@ -21,13 +20,16 @@ class SpeakersView extends Component {
   componentDidMount() {
     const { getInfo } = this.props;
     getInfo();
-    this.setState({speaker: {},modal: false})
+    this.setState({
+      speaker: {},
+      modal: false
+    })
   }
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.completed) {
       this.setState({
-        conference: nextProps.conference,
+        speakers: nextProps.conferenceInfo.speakers,
         error: nextProps.error,
         completed: nextProps.completed,
         modal: false
@@ -39,7 +41,7 @@ class SpeakersView extends Component {
     return (
       <View>
         {
-          this.state.conference.speakers.map((speaker, i) => (
+          this.state.speakers.map((speaker, i) => (
             <ListItem
               key={i}
               title={speaker.name + ' ' + speaker.surname}
@@ -83,11 +85,5 @@ class SpeakersView extends Component {
   }
 
 }
-
-SpeakersView.propTypes = {
-  getInfo: PropTypes.func.isRequired,
-  navigation: PropTypes.object.isRequired,
-  conference: PropTypes.object.isRequired
-};
 
 export default SpeakersView;
