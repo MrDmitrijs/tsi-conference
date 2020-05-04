@@ -24,15 +24,15 @@
       },
       {
         "name": "SESSION 1",
-        "description": null,
+        "description": "null",
         "start": 1561546800000,
         "place": "Hall#1 Aud. 130",
-        "moderators": "",
+        "moderators": "Dima",
         "data": [
           {
             "id": 1,
             "name": "Introduction to the Project «SCI-BI: Digitalization in Logistics and Transport»",
-            "description": "null",
+            "description": null,
             "speaker": "Irina Yatskiv",
             "place": "Hall#1 Aud. 130"
           },
@@ -414,10 +414,10 @@
         "id": 30,
         "name": "A.",
         "surname": "Medvedevs",
-        "email": null,
-        "about": null,
+        "email": "a.medvedevs@gmail.com",
+        "about": "Professor",
         "country": "Latvia",
-        "organization": null,
+        "organization": "TSI",
         "degree": "Prof., Dr.sc.ing."
       },
       {

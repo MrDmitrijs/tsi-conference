@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { View, Text } from 'react-native';
-import Icon from 'react-native-vector-icons/Feather';
+import Icon from 'react-native-vector-icons/Entypo';
 import { ListItem, Card } from 'react-native-elements';
 import Modal from 'react-native-modal';
 import config from '../../../config';
@@ -39,12 +39,12 @@ class SpeakersView extends Component {
     return (
       <View>
         {
-          this.state.conference.speakers.map((l, i) => (
+          this.state.conference.speakers.map((speaker, i) => (
             <ListItem
               key={i}
-              title={l.name + ' ' + l.surname}
-              subtitle={l.subtitle}
-              onPress={()=>this.setState({speaker: l, modal: true})}
+              title={speaker.name + ' ' + speaker.surname}
+              subtitle={speaker.degree}
+              onPress={()=>this.setState({speaker: speaker, modal: true})}
             />
           ))
         }
@@ -54,15 +54,16 @@ class SpeakersView extends Component {
                    onBackdropPress={() => this.setState({ modal: false })}>
               <Card title={(this.state.speaker.name + ' ' + this.state.speaker.surname ||'').toUpperCase()} >
                 <View>
-                  <Text style={{fontWeight:'700'}}>{this.state.speaker.subtitle}</Text>
-                  <Text style={{textAlign: 'justify'}}>{this.state.speaker.bio}</Text>
+                  <Text style={{fontWeight:'700'}}>{this.state.speaker.degree}</Text>
+                  <Text style={{textAlign: 'justify', marginTop: 10}}>{this.state.speaker.about}</Text>
+                  <Text style={{textAlign: 'justify', marginTop: 10}}>Organization : {this.state.speaker.organization}</Text>
 
                   <View style={{alignItems: 'flex-start', flexDirection: 'row'}}>
-                    <Icon.Button name="twitter" backgroundColor="transparent" color={config.PRIMARY_BG_COLOR}>
-                      <Text>@{this.state.speaker.twitter}</Text>
+                    <Icon.Button name="mail" backgroundColor="transparent" color={config.PRIMARY_BG_COLOR}>
+                      <Text>{this.state.speaker.email}</Text>
                     </Icon.Button>
-                    <Icon.Button name="github" backgroundColor="transparent" color={config.PRIMARY_BG_COLOR}>
-                      <Text>@{this.state.speaker.github}</Text>
+                    <Icon.Button name="location" backgroundColor="transparent" color={config.PRIMARY_BG_COLOR}>
+                      <Text>{this.state.speaker.country}</Text>
                     </Icon.Button>
                   </View>
                   <Button

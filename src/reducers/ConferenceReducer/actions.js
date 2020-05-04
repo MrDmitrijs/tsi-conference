@@ -14,7 +14,7 @@ export function conferenceFail(error) {
 }
 
 export function getInfo() {
-  return (dispatch) => {
+  return dispatch => {
     return dispatch(conferenceOk(JSON.parse(JSON.stringify(info))));
   };
 }
