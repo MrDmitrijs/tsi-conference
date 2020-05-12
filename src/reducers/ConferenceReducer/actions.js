@@ -25,3 +25,16 @@ export function getInfo() {
         })
   };
 }
+
+export function registerDevice(id) {
+    console.log("going to registerDevice " + id)
+    return dispatch => {
+        service.saveDevice(id)
+            .then(response => {
+                console.log(response)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    }
+}

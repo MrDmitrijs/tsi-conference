@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import {ActivityIndicator, SectionList, Text, View} from 'react-native';
+import {ActivityIndicator, SectionList, Text, View, TextInput, Button} from 'react-native';
+import StarRating from 'react-native-star-rating';
 import SegmentedControlIOS from "@react-native-community/segmented-control";
 import {Card, ListItem} from 'react-native-elements';
 import Modal from 'react-native-modal';
@@ -18,14 +19,16 @@ class ScheduleView extends Component {
             modal: false,
             sections: [],
             sectionsAndPlaces: new Map(),
+            sessionAndStarsWithComments: new Map(),
             selectedIndex: 0,
             days: []
         };
     }
 
     componentDidMount() {
-        const {getInfo} = this.props;
+        const {getInfo, saveDevice} = this.props;
         getInfo();
+        saveDevice("asdghjaksd-dsaasd-123123-asdds");
         this.setState({
             session: {},
             modal: false,
@@ -76,6 +79,18 @@ class ScheduleView extends Component {
         return result;
     }
 
+    setSessionAndStarsWithComments(sections) {
+        const result = new Map();
+        if (!sections) return result;
+        sections.forEach(session => {
+            session.data.forEach(lecture => {
+                    result.set(lecture.id, {rate: 3, comment: ""})
+                }
+            )
+        });
+        return result;
+    }
+
     componentWillReceiveProps(nextProps) {
         if (nextProps.completed) {
             const sections = this.filterSessions(nextProps.conferenceInfo, (nextProps.conferenceInfo || []).sections, 0);
@@ -87,6 +102,7 @@ class ScheduleView extends Component {
                 selectedIndex: 0,
                 loading: nextProps.loading,
                 sections: sections,
+                sessionAndStarsWithComments: this.setSessionAndStarsWithComments((nextProps.conferenceInfo || []).sections),
                 sectionsAndPlaces: this.setSessionsAndPlaces((nextProps.conferenceInfo || []).sections),
                 days: nextProps.conferenceInfo ? this.getDaysOfConference(nextProps.conferenceInfo) : []
             });
@@ -147,7 +163,7 @@ class ScheduleView extends Component {
                                     values={this.state.sectionsAndPlaces.get(section.start).places}
                                     selectedIndex={this.state.sectionsAndPlaces.get(section.start).selectedIndex}
                                     onChange={(event) => {
-                                        clearTimeout(promise)
+                                        clearTimeout(promise);
                                         const sectionsAndPlaces = this.state.sectionsAndPlaces;
                                         sectionsAndPlaces.set(section.start, {
                                             places: sectionsAndPlaces.get(section.start).places,
@@ -202,6 +218,52 @@ class ScheduleView extends Component {
                                         <Text style={{fontWeight: '700'}}>Speaker: </Text>
                                         <Text>{this.state.session.speaker}</Text>
                                     </View>
+
+                                    <View style={{flexDirection: 'row', marginTop: 10}}>
+                                        <StarRating
+                                            disabled={false}
+                                            maxStars={5}
+                                            rating={(this.state.sessionAndStarsWithComments.get(this.state.session.id) || 3).rate}
+                                            selectedStar={(rating) => {
+                                                const sessionAndStarsWithComments = this.state.sessionAndStarsWithComments;
+                                                sessionAndStarsWithComments.set(this.state.session.id, {
+                                                    rate: rating,
+                                                    comment: sessionAndStarsWithComments.get(this.state.session.id).comment
+                                                });
+                                                this.setState(
+                                                    sessionAndStarsWithComments
+                                                )
+                                            }}
+                                        />
+                                    </View>
+
+                                    <TextInput
+                                        style={{
+                                            height: 100,
+                                            borderColor: 'gray',
+                                            borderWidth: 1,
+                                            flexDirection: 'row',
+                                            marginTop: 10
+                                        }}
+                                        value={"" + (this.state.sessionAndStarsWithComments.get(this.state.session.id) || "").comment}
+                                        multiline
+                                        onChangeText={(text) => {
+                                            const sessionAndStarsWithComments = this.state.sessionAndStarsWithComments;
+                                            sessionAndStarsWithComments.set(this.state.session.id, {
+                                                rate: sessionAndStarsWithComments.get(this.state.session.id).rate,
+                                                comment: text
+                                            });
+                                            this.setState(
+                                                sessionAndStarsWithComments
+                                            )
+                                        }}
+                                    />
+
+                                    <Button
+                                        title="Save"
+                                        style={{flexDirection: 'row', marginTop: 10}}
+                                        onClick={() => this.setState({modal: false})}
+                                    />
                                 </View>
                             </Card>
                             }

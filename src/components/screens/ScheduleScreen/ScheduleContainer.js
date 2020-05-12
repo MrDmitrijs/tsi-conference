@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import ScheduleView from './ScheduleView';
-import { getInfo } from '../../../reducers/ConferenceReducer/actions';
+import { getInfo, registerDevice } from '../../../reducers/ConferenceReducer/actions';
 
 const mapStateToProps = state => ({
   ...state.conference
@@ -9,6 +9,9 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   getInfo: () => {
     dispatch(getInfo());
+  },
+  saveDevice: id => {
+    dispatch(registerDevice(id))
   }
 });
 
