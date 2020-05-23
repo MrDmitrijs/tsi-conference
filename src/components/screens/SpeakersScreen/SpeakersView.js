@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import {View, Text, ScrollView} from 'react-native';
 import Icon from 'react-native-vector-icons/Entypo';
-import { ListItem, Card } from 'react-native-elements';
+import { ListItem, Card, Button } from 'react-native-elements';
 import Modal from 'react-native-modal';
 import config from '../../../config';
-import { Button } from 'react-native-elements';
 
 class SpeakersView extends Component {
 
@@ -40,6 +39,7 @@ class SpeakersView extends Component {
   render() {
     return (
       <View>
+        <ScrollView>
         {
           this.state.speakers.map((speaker, i) => (
             <ListItem
@@ -50,6 +50,7 @@ class SpeakersView extends Component {
             />
           ))
         }
+        </ScrollView>
         {
             <Modal isVisible={this.state.modal}
                    onSwipe={() => this.setState({ modal: false })}

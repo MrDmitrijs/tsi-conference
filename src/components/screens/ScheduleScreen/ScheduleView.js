@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {ActivityIndicator, SectionList, Text, View, TextInput, Button} from 'react-native';
+import {ActivityIndicator, SectionList, Text, View, TextInput, Button, Keyboard} from 'react-native';
 import StarRating from 'react-native-star-rating';
 import SegmentedControlIOS from "@react-native-community/segmented-control";
 import {Card, ListItem} from 'react-native-elements';
@@ -224,6 +224,7 @@ class ScheduleView extends Component {
                                             disabled={false}
                                             maxStars={5}
                                             rating={(this.state.sessionAndStarsWithComments.get(this.state.session.id) || 3).rate}
+                                            fullStarColor={'green'}
                                             selectedStar={(rating) => {
                                                 const sessionAndStarsWithComments = this.state.sessionAndStarsWithComments;
                                                 sessionAndStarsWithComments.set(this.state.session.id, {
@@ -247,6 +248,8 @@ class ScheduleView extends Component {
                                         }}
                                         value={"" + (this.state.sessionAndStarsWithComments.get(this.state.session.id) || "").comment}
                                         multiline
+                                        returnKeyType='done'
+                                        onSubmitEditing={() => Keyboard.dismiss()}
                                         onChangeText={(text) => {
                                             const sessionAndStarsWithComments = this.state.sessionAndStarsWithComments;
                                             sessionAndStarsWithComments.set(this.state.session.id, {
@@ -262,7 +265,7 @@ class ScheduleView extends Component {
                                     <Button
                                         title="Save"
                                         style={{flexDirection: 'row', marginTop: 10}}
-                                        onClick={() => this.setState({modal: false})}
+                                        onPress={() => this.setState({modal: false})}
                                     />
                                 </View>
                             </Card>

@@ -23,11 +23,11 @@
         "data": []
       },
       {
-        "name": null,
-        "description": null,
+        "name": "SESSION #1",
+        "description": "Introduction session",
         "start": 1561546800000,
         "place": "Hall#1 Aud. 130",
-        "moderators": "",
+        "moderators": "I. Ishmuhametov, I. Kuzmina-Merlino",
         "data": [
           {
             "id": 1,
@@ -68,7 +68,7 @@
         "data": []
       },
       {
-        "name": null,
+        "name": "SESSION #2",
         "description": null,
         "start": 1561554000000,
         "place": "Hall#1 Aud. 130",
@@ -352,8 +352,8 @@
           {
             "id": 39,
             "name": "Intellectual capital as the main resource of the modern enterprise",
-            "description": null,
-            "speaker": "Oksana Skorobogatova, Pāvels Podjačevs ",
+            "description": "Intellectual capital as the main resource of the modern enterprise",
+            "speaker": "Oksana Skorobogatova, Pāvels Podjačevs",
             "place": "Hall#2 Aud. 230"
           },
           {
@@ -373,7 +373,7 @@
           {
             "id": 42,
             "name": "Методы повышения эффективности управления запасами на предприятии молочной промышленности",
-            "description": null,
+            "description": "Методы повышения эффективности управления запасами на предприятии молочной промышленности",
             "speaker": "Валентина Корикова ",
             "place": "Hall#2 Aud. 230"
           },
@@ -411,12 +411,12 @@
     "speakers": [
       {
         "id": 30,
-        "name": "A.",
-        "surname": "Medvedevs",
-        "email": null,
-        "about": null,
+        "name": "IT.",
+        "surname": "Expert",
+        "email": "it.expert@gmail.com",
+        "about": "IT expert",
         "country": "Latvia",
-        "organization": null,
+        "organization": "TSI",
         "degree": "Prof., Dr.sc.ing."
       },
       {

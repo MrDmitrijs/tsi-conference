@@ -1,5 +1,6 @@
 import * as types from './types';
 import service from "../../services/conference";
+import info from "../../assets/conference";
 
 export function conference() {
   return { type: types.INFO };
@@ -14,16 +15,22 @@ export function conferenceFail(error) {
 }
 
 export function getInfo() {
-  return dispatch => {
-    const response = service.getInfo();
-    response.then(response => response.json())
-        .then(responseJson => {
-          return dispatch(conferenceOk(responseJson));
-        })
-        .catch(error => {
-          return conferenceFail(error)
-        })
-  };
+    return dispatch => {
+        return dispatch(conferenceOk(JSON.parse(JSON.stringify(info))));
+    };
+}
+
+export function saveFeedback(star, comment) {
+    console.log("going to save feedback " + star + "; " + comment);
+    return dispatch => {
+        service.saveFeedback(id)
+            .then(response => {
+                console.log(response)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    }
 }
 
 export function registerDevice(id) {
